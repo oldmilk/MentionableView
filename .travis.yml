@@ -1,0 +1,14 @@
+language: android
+android:
+  components:
+  - android-23
+  - build-tools-23.0.1
+  - extra-android-m2repository
+  - extra-android-support
+  licenses:
+  - 'android-sdk-license.*'
+
+sudo: false
+
+script: 'travis_retry ./gradlew clean build'
+
